@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   height="780"
-   width="1020"
+   height="170mm"
+   width="300mm"
    version="1.1"
-   viewBox="0 0 956.25416 731.25001"
+   viewBox="0 0 1062.9968 602.36221"
    id="svg198"
-   sodipodi:docname="bg-tittle.svg"
+   sodipodi:docname="background.svg"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -36,26 +36,27 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3034"
-     inkscape:window-height="2007"
+     inkscape:window-width="1920"
+     inkscape:window-height="1055"
      id="namedview200"
      showgrid="false"
      fit-margin-top="6"
      fit-margin-left="6"
      fit-margin-right="6"
      fit-margin-bottom="6"
-     inkscape:zoom="1"
-     inkscape:cx="534.5"
-     inkscape:cy="537.5"
-     inkscape:window-x="806"
-     inkscape:window-y="40"
-     inkscape:window-maximized="0"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="422.14275"
+     inkscape:cy="251.73001"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
      inkscape:current-layer="g192"
-     units="px"
+     units="mm"
      inkscape:document-rotation="0"
-     inkscape:pagecheckerboard="0" />
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm" />
   <g
-     transform="matrix(0.82873288,0,0,0.82873288,-190.83917,355.56657)"
+     transform="matrix(0.82873288,0,0,0.82873288,-190.83917,226.67821)"
      id="g196"
      style="stroke-width:1.20666134">
     <g
@@ -70,22 +71,16 @@
            style="stroke-width:0.74052739"
            id="g192"
            transform="matrix(0.39992,0,0,0.39992,630.51,227.03)">
-          <g
-             style="stroke-width:0.05325199"
-             id="g6-3"
-             transform="matrix(13.906641,0,0,13.905567,808.66392,1469.7039)">
-            <path
-               style="fill:#00b8de;stroke-width:0.05325199"
-               inkscape:connector-curvature="0"
-               id="path4-6"
-               d="M 4.0721373,5.8435875 -95.018448,-93.254651 H -133.13148 V 5.8435875 Z"
-               sodipodi:nodetypes="ccccc" />
-          </g>
-          <path
-             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.76668847px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             d="M -1070.231,-11.942043 637.47673,1695.7656 H -1066.6014 Z"
-             id="path924"
-             inkscape:connector-curvature="0" />
+          <rect
+             style="fill:none;stroke:#999999;stroke-width:1.33545;stroke-linecap:round;stroke-linejoin:bevel"
+             id="rect928"
+             width="1976.5446"
+             height="1104.088"
+             x="-1029.4327"
+             y="-1292.5547"
+             transform="scale(1,-1)"
+             rx="7.4370003"
+             ry="6.9808235" />
         </g>
       </g>
     </g>

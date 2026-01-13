@@ -2,7 +2,6 @@
 
 Short goal for the in-devellopment version.
 
-
 ## Function 1
 
 Descriptif
@@ -13,6 +12,12 @@ Descriptif
 
 
 ## Function 2
+
+Descriptif
+
+- [ ] Use case 1
+- [ ] Use case 2
+- [ ] Use case 3
 
 
 

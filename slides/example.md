@@ -2,7 +2,7 @@
 marp: true
 theme: slides
 paginate: true
-backgroundImage: url('../style/background.svg')
+backgroundImage: url('./resources/background.svg')
 ---
 <!-- --------------------------------------------------------------- -->
 
@@ -15,7 +15,7 @@ backgroundImage: url('../style/background.svg')
 **author.name**
 [@around-there.net](mailto:author.name@around-there.net)
 
-![bg](../style/bg-tittle.svg)
+![bg](./resources/bg-tittle.svg)
 
 ---
 <!-- --------------------------------------------------------------- -->
@@ -40,7 +40,7 @@ And 1 more line.
 ---
 <!-- --------------------------------------------------------------- -->
 
-![bg](../style/bg-toc.svg)
+![bg](./resources/bg-toc.svg)
 
 - **An example of**
 - **Table of contents**

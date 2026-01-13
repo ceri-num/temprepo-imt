@@ -1,30 +1,21 @@
-# HackaMove
+# TempRepo: a template for repositories
 
-An HackaGames game based on the multi-paths planning problem.
+Here, you should present the project in few setences.
 
 
 ## Install:
 
-_mb6-space_ can be cloned and configured accordingly to ROS2.
-Also, the proposed command tools rely on a [toml](https://toml.io) based configuration file.
+Install instruction, with dependancy description.
+
+The `install` script in `bin` directory authomatize the install process.
 
 ```sh
-pip install toml toml-cli
-git clone https://github.com/imt-mobisyst/mb6-space.git
-cd mb6-space
-./bin/set-mb6-bashrc
-source ~/.bashrc
+./bin/install.sh
 ```
-
-The `set-mb6-bashrc` script adds lines into your `~/.bashrc` file to source `./bin/run-commands.bash` automatically in your shells.
-
 
 ## Get Stated:
 
-_mb6-space_ is a meta-package mainly including the documentation and some useful command tools.
-It is designed to be your ros-workspace.
-
-Connect to the [imt-mobisyst](https://imt-mobisyst.github.io/mb6-space) web pages for more information.
+Get started instruction.
 
 
 ## Documentation
@@ -39,24 +30,57 @@ mkdocs serve
 You can then refer to the [http://127.0.0.1:8000/](documentation).
 The navigation structure is defined on the `mkdocs.yml` file.
 
-## Contribute 
 
-Doc. deployment is achieved with a public github repository (_imt-mobisyst.github.io.git_), by copying the _mkdocs_ generated site in the `lct-pls` directory of this public repository.
+## Contributes
+
+The project developments relies on several tools: 
+
+### Git
+
+- **Git** is a decentralized solution for version management. Its first feature is to allow several contributors to work on a same directory, each one on its own machine.
+It permits to share an entire historic of all modifications through a common *repository* on a server, to facilitate fusion of document version (mainly by using text format), and to do it in a safe way.
+
+- A **GitServer**, *Bitbucket*, *GitHub*, [framagit](https://framagit.org) or a private install of gitlab, propose solutions based on *git* to share a repository in the cloud with management services (groups, members, access rules).
+
+- **Markdown Documents**: _Markdown_ is a text format, very simple and directly interpretable on all _git_ server solutions. The format follows the philosophy: **What you see is what you get**
+
+- Going further with Git:
+    * [Learn Git](https://try.github.io/)
+    * [GitForWindows](https://gitforwindows.org/) a simple IDE for Windows.
+    * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+
+### toml config file
+
+Configuration file relies on a simple [toml text format](https://fr.wikipedia.org/wiki/TOML).
+Python and shell tools can be installed with `pip`.
+
+```sh
+pip install toml toml-cli
+```
+
+Default config file is proposed in `bin/default-config.toml` and have been copied in root directory of the repository as `config.toml` at install step.
+
+Usage exemple in terminal: 
+
+```sh
+toml get webpages.module
+```
+
+### Github pages 
+
+Doc. deployment is achieved with a public github repository (_temprepo-site.github.io.git_), by copying the _mkdocs_ generated site in the `lct-pls` directory of this public repository.
 
 ```sh
 mkdocs build
-git clone git@github.com:imt-mobisyst/imt-mobisyst.github.io.git ../imt-mobisyst-site
-rm -fr ../imt-mobisyst-site/lct-pls
-mv ./site ../imt-mobisyst-site/lct-pls
-git -C ../imt-mobisyst-site commit -am "lct-pls updates"
-git -C ../imt-mobisyst-site push
+git clone git@github.com:temprepo-site/temprepo-site.github.io.git ../temprepo-site
+rm -fr ../temprepo-site-site/lct-pls
+mv ./site ../temprepo-site-site/lct-pls
+git -C ../temprepo-site-site commit -am "lct-pls updates"
+git -C ../temprepo-site-site push
 ```
 
 For convenience, this manipulation is automatized with the script `./bin/docs-deploy.sh`.
 To notice that the documentation repository can be cloned anywhere on your computer while your `config.toml` is updated accordingly.
-
-
-## Some Tools
 
 ### Slide Presentations
 
@@ -64,7 +88,7 @@ The presentation/slides are prepared using `marp` (an extantion to Markdown perm
 `marp` is fully integrated to VisualCode:
 
 - Get *Marp for VS Code* extention
-- On `VS Code parameters > working space > Marp for VS Code` you can add elements on `Markdown › Marp: Themes` : `style/slides.css`.
+- On `VS Code parameters > working space > Marp for VS Code` you can add elements on `Markdown › Marp: Themes` : `slides/slides.css`.
 - Also authorise html tag. activate `all` in `marp: HTML` setting.
 
 ### Overleaf Web-Editor
@@ -72,14 +96,14 @@ The presentation/slides are prepared using `marp` (an extantion to Markdown perm
 [Overleaf](https://www.overleaf.com) is a Latex dedicated web-editor.
 
 It is possible to clone locally overleaf project based on `git` tool.
+It supposes that you create an identifiaction token on your _overleaf.com_ settings.
 For instance to clone a `PROJECT-NAME` from the overleaf code `CODE` : 
 
 ```bash
 git clone https://git@git.overleaf.com/$CODE $PROJECT-NAME
 ```
 
-by convention, the project name is built as `PROJECT-NAME= ovl-$Author$YEAR-$PROJECT`
-
+By convention, we recommand to build the project name as `PROJECT-NAME= ovl-$Author-$PROJECT-$YEAR`
 
 CODE                     | Author   | PROJECT               | DATE      |
 -------------------------|----------|-----------------------|-----------|
@@ -87,19 +111,4 @@ CODE                     | Author   | PROJECT               | DATE      |
 67c85987f374a5ffcce204ab | Ltaif    | DCIA                  | 2025      |
 6797af19d58c0412ab4da125 | Gouget   | IROS                  | 2025      |
 67ed28f0d11dfd6972fa3e09 | Alie     | PAIS                  | 2025      |
-
-
-## New on Git
-
-- **Git** is a decentralized solution for version management. Its first feature is to allow several contributors to work on a same directory, each one on its own machine.
-It permits to share an entire historic of all modifications through a common *repository* on a server, to facilitate fusion of document version (mainly by using text format), and to do it in a safe way.
-
-- A **GitServer**, *Bitbucket*, *GitHub*, [framagit](https://framagit.org) or a private install of gitlab (*[gvipers](gvipers.imt-lille-douai.fr)* at IMT Nord-Europe), propose solutions based on *git* to share a repository in the cloud with management services (groups, members, access rules).
-
-- **Markdown Documents** is a text format, very simple and directly interpretable on all _git_ server solutions. The format follows the philosophy: **What you see is what you get**
-
-- Going further with Git:
-    * [Learn Git](https://try.github.io/)
-    * [GitForWindows](https://gitforwindows.org/) a simple IDE for Windows.
-    * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
