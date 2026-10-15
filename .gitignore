@@ -7,7 +7,7 @@ config.toml
 
 # Generated
 #-----------------
-site
+site/
 
 # System
 #-----------------
@@ -39,6 +39,7 @@ lost+found
 #-----------------
 *.pyc
 __pycache__/
+dist/
 
 # c/c++:
 #-----------------
