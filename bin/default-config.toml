@@ -1,8 +1,11 @@
 [webpages]
-module = "temprepo-modul"
-target = "../temprepo-site"
+module= "temprepo-modul"
+target= "../temprepo-site"
 
 [ros2]
-discovery_range = "SUBNET"
-domain_id = "00"
+discovery_range= "SUBNET"
+domain_id= "00"
 
+[tog]
+local= "."
+distant= ""
